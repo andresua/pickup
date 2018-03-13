@@ -1,9 +1,7 @@
 # pickup
 Servicio Pickup lambda
 
-<ol>
-<li><b>Servicio PickUp</b>: <code>[index.js](index.js)</code></li>
-<li><b>Servicio PickUp(Compensación)</b> : <code>index.compensacion.js</code></li>
-<li><b>Políticas servicio</b>: <code>pickup.policy.json</code></li>
-<li><b>Role de ejecución del servicio</b>: <code>pickup.executionrole.json</code></li>
-</ol>
+1. [**Servicio PickUp**](index.js "Index Servicio PickUp")
+2. [**Servicio PickUp(Compensación)**](index.compensacion.js "Index Servicio PickUp(Compensación)")
+3. [**Políticas servicio**](pickup.policy.json "Políticas Servicio PickUp")
+4. [**Rol de ejecución del servicio**](pickup.executionrole.json "Rol Ejecución Servicio PickUp")
