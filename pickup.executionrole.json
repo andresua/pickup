@@ -1,0 +1,48 @@
+{
+  "Version": "2012-10-17",
+  "Id": "default",
+  "Statement": [
+    {
+      "Sid": "8de9bca457b13a43b5b46640b3669741",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:576540549214:function:PickUpFunction",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-west-2:576540549214:7iuglcdcoc/*/GET/"
+        }
+      }
+    },
+    {
+      "Sid": "66c1590ec6793e41962f1f954b75ad01",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:576540549214:function:PickUpFunction",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-west-2:576540549214:7iuglcdcoc/*/POST/"
+        }
+      }
+    },
+    {
+      "Sid": "5296dd7f9f223f8ea84e6ccacb5e735b",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "apigateway.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:576540549214:function:PickUpFunction",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:execute-api:us-west-2:576540549214:7iuglcdcoc/*/POST/pickup"
+        }
+      }
+    }
+  ]
+} 
